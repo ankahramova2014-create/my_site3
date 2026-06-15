@@ -187,20 +187,14 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
-    nav {
+section, nav {
         flex-direction: column;
     }
-    
     nav a {
         padding: 10px;
         font-size: 16px;
     }
     
-  
-    section {
-        flex-direction: column;
-    }
     .mobile{
         displai: none;
     }
