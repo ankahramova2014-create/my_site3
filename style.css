@@ -191,34 +191,7 @@ footer {
     section, nav {
         flex-direction: column;
     }
-    .mobile {
+        .mobile {
         display: none;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .about-container {
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    header {
-        padding: 20px;
-    }
-    
-    header h1 {
-        font-size: 1.3rem;
-    }
-    
-    aside, .main {
-        flex: 100%;
-    }
-    
-    .about-photo h3 {
-        font-size: 1.4rem;
     }
 }
