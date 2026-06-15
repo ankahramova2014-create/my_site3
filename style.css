@@ -187,25 +187,19 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    /* Навигация */
     nav {
         flex-direction: column;
-    }
-    
+    }    
     nav a {
         padding: 10px;
         font-size: 16px;
-    }
-    
-    /* Секция - вертикальное расположение */
+    }    
     section {
         flex-direction: column;
     }
-    
-    /* Для ГЛАВНОЙ страницы (index.html) - aside ПЕРВЫЙ */
+ 
     aside {
-        flex: 100%;
-        order: 1; /* Боковая панель ПЕРВАЯ на главной странице */
+        flex: 100%; 
         font-size: 16px;
         padding: 20px;
     }
@@ -213,17 +207,6 @@ footer {
     aside p {
         font-size: 16px;
     }
-    
-    /* Для ГЛАВНОЙ страницы - main ВТОРОЙ */
-    .main {
-        flex: 100%;
-        order: 2; /* Основной контент ВТОРОЙ на главной странице */
-        font-size: 18px;
-        padding: 20px;
-        box-shadow: none;
-    }
-    
-    /* Заголовки */
     h1 {
         font-size: 24px;
     }
