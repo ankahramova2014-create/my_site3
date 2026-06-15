@@ -197,7 +197,7 @@ footer {
     section {
         flex-direction: column;
     }
-    .mobile{
+    aside.mobile{
         display: none;
     }
  
