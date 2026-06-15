@@ -186,45 +186,65 @@ footer {
     color: #999;
 }
 
-@media screen and (max-width: 700px) {
- section, nav {
+@media screen and (max-width: 768px) {
+
+    nav {
         flex-direction: column;
     }
-      
-    section {
-        width: 100%;
-    }
     
-   .mobile {
-        display: none;
-    }
-    .main,
-    .about-container,
-    .about-info {
-        width: 100%;
-        flex: 100%;
-        box-sizing: border-box;
-    }
-    
-   
-    aside,
-    .main {
-        padding: 20px;
-        margin: 0;
+    nav a {
+        padding: 10px;
+        font-size: 16px;
     }
     
   
+    section {
+        flex-direction: column;
+    }
+    .mobile{
+        displai: none;
+    }
+    aside {
+        flex: 100%;
+        order: 2; 
+        font-size: 16px;
+        padding: 20px;
+    }
+    
+    aside p {
+        font-size: 16px;
+    }
+    
     .main {
+        flex: 100%;
+        order: 1;
+        font-size: 18px;
+        padding: 20px;
         box-shadow: none;
     }
 
-    .about-container {
-        padding: 0;
+    h1 {
+        font-size: 24px;
     }
     
-    .about-info {
-        padding: 0;
-        margin-top: 20px;
+    header p {
+        font-size: 16px;
+    }
+    
+    aside h2, .main h2, .about-info h2 {
+        font-size: 22px;
+    }
+    
+    aside h3, .header_section h3 {
+        font-size: 18px;
+    }
+
+    .photo_head {
+        width: 90%;
+    }
+
+    .about-container {
+        padding: 15px;
     }
     
     .photo {
@@ -232,31 +252,47 @@ footer {
         height: 200px;
     }
     
+    .about-photo h3 {
+        font-size: 20px;
+    }
     
-    aside,
-    .main,
-    .about-info,
-    .header_section {
+    .position {
+        font-size: 14px;
+    }
+    
+    .about-info {
+        padding: 15px;
         font-size: 16px;
     }
     
-    aside h2,
-    .main h2,
-    .about-info h2 {
-        font-size: 22px;
+    .header_section ul {
+        margin-left: 15px;
     }
     
-    aside h3,
-    .header_section h3 {
-        font-size: 18px;
+    .header_section li {
+        font-size: 14px;
     }
-    
+
     .footer-content {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
     
     .footer-section {
         margin-bottom: 20px;
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .footer-section h4 {
+        font-size: 16px;
+    }
+    
+    .footer-section p {
+        font-size: 14px;
+    }
+    
+    .copyright p {
+        font-size: 12px;
     }
 }
