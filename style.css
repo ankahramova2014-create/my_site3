@@ -193,5 +193,30 @@ footer {
     }
         .mobile {
         display: none;
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        margin-bottom: 20px;
+    }
+    
+    aside, .main {
+        flex: 100%;
+    }
+    
+    .photo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .about-info {
+        padding: 15px;
+    }
+    
+    .header_section {
+        font-size: 16px;
     }
 }
