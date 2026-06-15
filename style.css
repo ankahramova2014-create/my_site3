@@ -201,12 +201,13 @@ footer {
         display: none;
     }
  
-    aside {
-        flex: 100%; 
+     aside:not(.mobile) {
+        flex: 100%;
+        order: 1;
         font-size: 16px;
         padding: 20px;
+        display: block;
     }
-    
     aside p {
         font-size: 16px;
     }
