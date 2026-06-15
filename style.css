@@ -203,17 +203,15 @@ footer {
  
      aside:not(.mobile) {
         flex: 100%;
-        order: 0;
         font-size: 16px;
         padding: 20px;
-        display: block;
+   
     }
     aside p {
         font-size: 16px;
     }
     .main {
         flex: 100%;
-        order: 2;
         font-size: 18px;
         padding: 20px;
         box-shadow: none;
