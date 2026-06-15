@@ -186,45 +186,68 @@ footer {
     color: #999;
 }
 
-@media screen and (max-width: 700px) {
- section, nav {
+@media screen and (max-width: 768px) {
+    /* Навигация */
+    nav {
         flex-direction: column;
     }
-      
-    section {
-        width: 100%;
+    
+    nav a {
+        padding: 10px;
+        font-size: 16px;
     }
     
-   .mobile {
-        display: none;
+    /* Секция - вертикальное расположение */
+    section {
+        flex-direction: column;
     }
-     aside {
+    
+    /* Для ГЛАВНОЙ страницы (index.html) - aside ПЕРВЫЙ */
+    aside {
         flex: 100%;
         order: 1; /* Боковая панель ПЕРВАЯ на главной странице */
         font-size: 16px;
         padding: 20px;
     }
-   aside p {
+    
+    aside p {
         font-size: 16px;
     }
-    aside,
-    .main {
-        padding: 20px;
-        margin: 0;
-    }
     
-  
+    /* Для ГЛАВНОЙ страницы - main ВТОРОЙ */
     .main {
+        flex: 100%;
+        order: 2; /* Основной контент ВТОРОЙ на главной странице */
+        font-size: 18px;
+        padding: 20px;
         box-shadow: none;
     }
-
-    .about-container {
-        padding: 0;
+    
+    /* Заголовки */
+    h1 {
+        font-size: 24px;
     }
     
-    .about-info {
-        padding: 0;
-        margin-top: 20px;
+    header p {
+        font-size: 16px;
+    }
+    
+    aside h2, .main h2, .about-info h2 {
+        font-size: 22px;
+    }
+    
+    aside h3, .header_section h3 {
+        font-size: 18px;
+    }
+    
+    /* Фото компании */
+    .photo_head {
+        width: 90%;
+    }
+    
+    /* Блок "Обо мне" на внутренней странице */
+    .about-container {
+        padding: 15px;
     }
     
     .photo {
@@ -232,31 +255,59 @@ footer {
         height: 200px;
     }
     
+    .about-photo h3 {
+        font-size: 20px;
+    }
     
-    aside,
-    .main,
-    .about-info,
-    .header_section {
+    .position {
+        font-size: 14px;
+    }
+    
+    .about-info {
+        padding: 15px;
         font-size: 16px;
     }
     
-    aside h2,
-    .main h2,
-    .about-info h2 {
-        font-size: 22px;
+    .header_section ul {
+        margin-left: 15px;
     }
     
-    aside h3,
-    .header_section h3 {
-        font-size: 18px;
-    }    
+    .header_section li {
+        font-size: 14px;
+    }
     
+    /* Футер */
     .footer-content {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
     
     .footer-section {
         margin-bottom: 20px;
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .footer-section h4 {
+        font-size: 16px;
+    }
+    
+    .footer-section p {
+        font-size: 14px;
+    }
+    
+    .copyright p {
+        font-size: 12px;
     }
 }
+
+/* Специальные правила для ВНУТРЕННЕЙ страницы (inner.html) */
+/* На внутренней странице фото и информация о себе должны быть сверху */
+.page-inner section .mobile {
+    order: 1 !important;
+}
+
+.page-inner section .main {
+    order: 2 !important;
+}
+
